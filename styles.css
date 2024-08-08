@@ -80,14 +80,14 @@ body {
     top: 50%;
     transform: translateY(-50%);
     color: #ffffff;
-    font-size: 0.85em; /* Збільшимо розмір шрифту, щоб зробити текст більш читабельним */
+    font-size: 1em; /* Збільшимо розмір шрифту, щоб зробити текст більш читабельним */
 }
 
 .challenge-overlay ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-size: 0.85em; /* Зробимо розмір шрифту списку трохи більшим */
+    font-size: 0.95em; /* Зробимо розмір шрифту списку трохи більшим */
 }
 
 .challenge-overlay h2 {
@@ -97,11 +97,11 @@ body {
 }
 
 .pubg-content .challenge-overlay {
-    left: 10%; /* Вирівнювання блоку для PUBG */
+    right: 10%; /* Вирівнювання блоку для PUBG */
 }
 
 .overwatch-content .challenge-overlay {
-    right: 10%; /* Вирівнювання блоку для Overwatch */
+    left: 10%; /* Вирівнювання блоку для Overwatch */
 }
 
 .pubg-text, .pubg-content h2 {
