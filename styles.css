@@ -14,15 +14,24 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
+    display: flex;
 }
 
 .half {
     width: 50%;
     height: 100%;
-    float: left;
-    overflow: hidden;
-    position: relative;
+    position: absolute;
+    top: 0;
     transition: width 0.5s;
+    overflow: hidden;
+}
+
+.half.pubg {
+    left: 0;
+}
+
+.half.overwatch {
+    right: 0;
 }
 
 .half img {
@@ -38,26 +47,50 @@ body {
 
 .text-overlay {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 2em;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     border-radius: 5px;
     transition: background 0.5s;
+    text-align: center;
 }
 
 .half:hover .text-overlay {
     background: rgba(0, 0, 0, 0.7);
 }
 
-input[type="radio"]:checked ~ .half {
-    width: 0;
+input[type="radio"]:checked#toggle-pubg ~ .pubg {
+    width: 100%;
 }
 
-input[type="radio"]:checked ~ .pubg-content,
-input[type="radio"]:checked ~ .overwatch-content {
+input[type="radio"]:checked#toggle-pubg ~ .overwatch {
+    display: none;
+}
+
+input[type="radio"]:checked#toggle-overwatch ~ .overwatch {
+    width: 100%;
+}
+
+input[type="radio"]:checked#toggle-overwatch ~ .pubg {
+    display: none;
+}
+
+input[type="radio"]:checked#toggle-pubg ~ .pubg-content,
+input[type="radio"]:checked#toggle-overwatch ~ .overwatch-content {
     display: block;
+}
+
+input[type="radio"]:checked#toggle-home ~ .pubg,
+input[type="radio"]:checked#toggle-home ~ .overwatch {
+    display: block;
+    width: 50%;
+}
+
+input[type="radio"]:checked#toggle-home ~ .full {
+    display: none;
 }
 
 .full {
@@ -111,4 +144,5 @@ ul li {
     margin-bottom: 20px;
     color: white;
     cursor: pointer;
+    text-decoration: none;
 }
