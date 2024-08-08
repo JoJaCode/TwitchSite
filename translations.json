@@ -5,12 +5,28 @@
         "pubg_challenges": "Челенджі для PUBG",
         "overwatch_challenges": "Челенджі для Overwatch 2",
         "pubg_tasks": {
-            "pubg_task1": "Виграйте матч без використання зброї.",
-            "pubg_task2": "Вижийте 30 хвилин на мапі Sanhok."
+            "pubg_task1": "Пройти весь матч, використовуючи тільки пістолет - 25 грн",
+            "pubg_task2": "Використовувати лише снайперську гвинтівку для всіх вбивств у матчі - 25 грн",
+            "pubg_task3": "Грати проти ворогів тільки з допомогою арбалета - 100 грн",
+            "pubg_task4": "Вбивати ворогів без використання прицілу (ADS) - 50 грн",
+            "pubg_task5": "Змінити управління мишки для лівшей (я правша, якщо що) - 100 грн",
+            "pubg_task6": "Пересуватися лише пішки, не використовуючи біг - 50 грн",
+            "pubg_task7": "Пройти матч без використання будь-якої броні чи шолому - 200 грн",
+            "pubg_task8": "Бути снайпером без будь-якого додаткового обладнання - 100 грн",
+            "pubg_task9": "Відмовитися від усіх членів команди та спробувати виграти соло проти складу - 300 грн",
+            "pubg_task10": "Особливі умови - договірно в чаті"
         },
         "overwatch_tasks": {
-            "overwatch_task1": "Переможете 10 ворогів за героя Reinhardt.",
-            "overwatch_task2": "Зробіть 5 ультімейтів у одній грі."
+            "overwatch_task1": "Грати за персонажа, на ваш вибір, у швидкому матчі. - 50 грн",
+            "overwatch_task2": "Грати за персонажа, на ваш вибір, у змагальному матчі. - 250 грн",
+            "overwatch_task3": "Пограти особисто з вами в будь-який режим - 25 грн",
+            "overwatch_task4": "Використовувати лише один ультимейт за весь матч - 50 грн",
+            "overwatch_task5": "Вбивати тільки одного із ворогів - 150 грн",
+            "overwatch_task6": "Лікувати тільки одного із союзників - 150 грн",
+            "overwatch_task7": "Заходити весь час з тилу за дд - 150 грн",
+            "overwatch_task8": "Грати тільки за танка і захищати одного союзника протягом усього матчу - 150 грн",
+            "overwatch_task9": "Уникати боротьби з певними героями - 40 грн за 1 героя",
+            "overwatch_task10": "Особливі умови - договірно в чаті"
         },
         "twitch": "Twitch",
         "discord": "Discord",
@@ -22,12 +38,28 @@
         "pubg_challenges": "Challenges for PUBG",
         "overwatch_challenges": "Challenges for Overwatch 2",
         "pubg_tasks": {
-            "pubg_task1": "Win a match without using weapons.",
-            "pubg_task2": "Survive 30 minutes on Sanhok map."
+            "pubg_task1": "Play the entire match using only a pistol - $0.5",
+            "pubg_task2": "Use only a sniper rifle for all kills in the match - $0.5",
+            "pubg_task3": "Fight enemies using only a crossbow - $2",
+            "pubg_task4": "Kill enemies without using the aim-down-sights (ADS) - $1",
+            "pubg_task5": "Switch mouse controls to left-handed (I am right-handed) - $2",
+            "pubg_task6": "Move only by walking, no running allowed - $1",
+            "pubg_task7": "Complete the match without any armor or helmet - $4",
+            "pubg_task8": "Be a sniper without any additional equipment - $2",
+            "pubg_task9": "Abandon your team and try to win solo against squads - $6",
+            "pubg_task10": "Special conditions - negotiable in chat"
         },
         "overwatch_tasks": {
-            "overwatch_task1": "Defeat 10 enemies as Reinhardt.",
-            "overwatch_task2": "Use 5 ultimates in one game."
+            "overwatch_task1": "Play as a hero of your choice in a quick match - $1",
+            "overwatch_task2": "Play as a hero of your choice in a competitive match - $5",
+            "overwatch_task3": "Play personally with you in any mode - $0.5",
+            "overwatch_task4": "Use only one ultimate ability throughout the match - $1",
+            "overwatch_task5": "Target only one enemy throughout the match - $3",
+            "overwatch_task6": "Heal only one ally throughout the match - $3",
+            "overwatch_task7": "Flank constantly as a damage dealer - $3",
+            "overwatch_task8": "Play only as a tank and protect a single ally - $3",
+            "overwatch_task9": "Avoid fighting certain heroes - $1 per hero",
+            "overwatch_task10": "Special conditions - negotiable in chat"
         },
         "twitch": "Twitch",
         "discord": "Discord",
