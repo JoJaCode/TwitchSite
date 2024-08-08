@@ -10,7 +10,8 @@
         "overwatch_task2": "Зробіть 5 ультімейтів у одній грі.",
         "twitch": "Twitch",
         "discord": "Discord",
-        "back": "← Повернутися"
+        "back": "← Повернутися",
+        "language_select": "Виберіть мову"
     },
     "en": {
         "pubg": "PUBG",
@@ -23,6 +24,7 @@
         "overwatch_task2": "Use 5 ultimates in one game.",
         "twitch": "Twitch",
         "discord": "Discord",
-        "back": "← Back"
+        "back": "← Back",
+        "language_select": "Select Language"
     }
 }
