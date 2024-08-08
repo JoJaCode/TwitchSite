@@ -5,7 +5,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     fetch('translations.json')
         .then(response => response.json())
-        .then(data => applyTranslations(data[lang]));
+        .then(data => {
+            applyTranslations(data[lang]);
+
+            // Додаємо обробники для кнопок зміни мови після того, як дані завантажено
+            document.querySelectorAll('.lang-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    const selectedLang = this.getAttribute('data-lang');
+                    localStorage.setItem('language', selectedLang);
+                    applyTranslations(data[selectedLang]);
+                });
+            });
+        });
 
     function applyTranslations(translations) {
         // Зміна назв ігор
@@ -26,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 <a href="https://discord.com/" class="button">${translations.discord}</a>
             </div>
             <div class="language-buttons">
-                <button class="lang-button" data-lang="ua">Українська</button>
-                <button class="lang-button" data-lang="en">English</button>
+                <button class="lang-button" data-lang="ua">🇺🇦</button>
+                <button class="lang-button" data-lang="en">🇬🇧</button>
             </div>
         `;
 
@@ -45,18 +56,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 <a href="https://discord.com/" class="button">${translations.discord}</a>
             </div>
             <div class="language-buttons">
-                <button class="lang-button" data-lang="ua">Українська</button>
-                <button class="lang-button" data-lang="en">English</button>
+                <button class="lang-button" data-lang="ua">🇺🇦</button>
+                <button class="lang-button" data-lang="en">🇬🇧</button>
             </div>
         `;
-
-        // Додаємо обробники для кнопок зміни мови
-        document.querySelectorAll('.lang-button').forEach(button => {
-            button.addEventListener('click', function() {
-                const selectedLang = this.getAttribute('data-lang');
-                localStorage.setItem('language', selectedLang);
-                applyTranslations(data[selectedLang]);
-            });
-        });
     }
 });
