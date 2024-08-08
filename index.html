@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Selection</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Підключення шрифтів -->
+    <!-- Підключення шрифту PUBG -->
     <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/pubg-sans">
+    <!-- Підключення шрифту Roboto Condensed -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <style>
         @font-face {
             font-family: 'Bank Gothic';
@@ -23,48 +25,27 @@
         <div class="half pubg">
             <label for="toggle-pubg">
                 <img src="pubg.jpg" alt="PUBG">
-                <div class="text-overlay pubg-text">PUBG</div>
+                <div class="text-overlay pubg-text"></div>
             </label>
         </div>
 
         <div class="half overwatch">
             <label for="toggle-overwatch">
                 <img src="overwatch.jpg" alt="Overwatch 2">
-                <div class="text-overlay overwatch-text">Overwatch 2</div>
+                <div class="text-overlay overwatch-text"></div>
             </label>
         </div>
 
         <!-- Контент для PUBG -->
         <div class="content-container pubg-content">
-            <div class="challenge-overlay">
-                <label for="toggle-home" class="back-button">← Повернутися</label>
-                <h2>Челенджі для PUBG</h2>
-                <ul>
-                    <li>Виграйте матч без використання зброї.</li>
-                    <li>Вижийте 30 хвилин на мапі Sanhok.</li>
-                </ul>
-                <div class="buttons">
-                    <a href="https://www.twitch.tv/" class="button">Twitch</a>
-                    <a href="https://discord.com/" class="button">Discord</a>
-                </div>
-            </div>
+            <div class="challenge-overlay"></div>
         </div>
 
         <!-- Контент для Overwatch 2 -->
         <div class="content-container overwatch-content">
-            <div class="challenge-overlay">
-                <label for="toggle-home" class="back-button">← Повернутися</label>
-                <h2>Челенджі для Overwatch 2</h2>
-                <ul>
-                    <li>Переможете 10 ворогів за героя Reinhardt.</li>
-                    <li>Зробіть 5 ультімейтів у одній грі.</li>
-                </ul>
-                <div class="buttons">
-                    <a href="https://www.twitch.tv/" class="button">Twitch</a>
-                    <a href="https://discord.com/" class="button">Discord</a>
-                </div>
-            </div>
+            <div class="challenge-overlay"></div>
         </div>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
