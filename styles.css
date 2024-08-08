@@ -97,11 +97,13 @@ body {
 }
 
 .pubg-content .challenge-overlay {
-    left: 10%;
+    right: 10%; /* Розміщення блоку для PUBG праворуч */
+    left: auto;
 }
 
 .overwatch-content .challenge-overlay {
-    right: 10%;
+    left: 10%; /* Розміщення блоку для Overwatch ліворуч */
+    right: auto;
 }
 
 .pubg-text, .pubg-content h2 {
