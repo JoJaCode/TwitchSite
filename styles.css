@@ -57,10 +57,10 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 1.5em; /* Збільшуємо розмір емодзі */
+    font-size: 2em; /* Збільшено розмір емодзі */
     outline: none;
     transition: transform 0.3s;
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 .lang-button:hover {
@@ -68,17 +68,17 @@ body {
 }
 
 .challenge-overlay ul {
-    font-size: 0.7em; /* Трохи зменшено розмір тексту */
+    font-size: 0.8em; /* Трохи зменшено розмір тексту */
 }
 
 .challenge-overlay {
     position: relative;
-    z-index: 5;
-    padding: 20px;
     background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
     border-radius: 5px;
     max-width: 600px;
     margin: 0 auto;
+    color: #ffffff;
 }
 
 .pubg-text, .pubg-content h2 {
