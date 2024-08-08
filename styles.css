@@ -182,11 +182,13 @@ ul li {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-size: 1em;
 }
 
 .lang-button:hover {
     background-color: #2980b9;
 }
+
 
 
 /* Анімація для появи тексту */
