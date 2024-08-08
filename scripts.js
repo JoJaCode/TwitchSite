@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
+    let translationsData;
+
     const savedLang = localStorage.getItem('language');
     const userLang = navigator.language || navigator.userLanguage;
     const lang = savedLang || (userLang.includes("uk") ? "ua" : "en");
@@ -6,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch('translations.json')
         .then(response => response.json())
         .then(data => {
+            translationsData = data;
             applyTranslations(data[lang]);
 
             // Додаємо обробники для кнопок зміни мови після того, як дані завантажено
@@ -13,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 button.addEventListener('click', function() {
                     const selectedLang = this.getAttribute('data-lang');
                     localStorage.setItem('language', selectedLang);
-                    applyTranslations(data[selectedLang]);
+                    applyTranslations(translationsData[selectedLang]);
                 });
             });
         });
