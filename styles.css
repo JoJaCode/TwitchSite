@@ -57,18 +57,22 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 2em; /* Збільшено розмір емодзі */
     outline: none;
-    transition: transform 0.3s;
     margin: 0 10px;
 }
 
-.lang-button:hover {
+.flag-icon {
+    width: 40px; /* Розмір зображень прапорців */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.lang-button:hover .flag-icon {
     transform: scale(1.2);
 }
 
 .challenge-overlay ul {
-    font-size: 0.8em; /* Трохи зменшено розмір тексту */
+    font-size: 0.9em; /* Трохи зменшено розмір тексту */
 }
 
 .challenge-overlay {
