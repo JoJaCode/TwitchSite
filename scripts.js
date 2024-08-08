@@ -1,22 +1,62 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const savedLang = localStorage.getItem('language');
     const userLang = navigator.language || navigator.userLanguage;
-    const lang = userLang.includes("uk") ? "ua" : "en";
+    const lang = savedLang || (userLang.includes("uk") ? "ua" : "en");
 
     fetch('translations.json')
         .then(response => response.json())
         .then(data => applyTranslations(data[lang]));
 
     function applyTranslations(translations) {
+        // Зміна назв ігор
         document.querySelector('.pubg-text').textContent = translations.pubg;
         document.querySelector('.overwatch-text').textContent = translations.overwatch;
-        document.querySelector('.pubg-content h2').textContent = translations.pubg_challenges;
-        document.querySelector('.overwatch-content h2').textContent = translations.overwatch_challenges;
-        document.querySelector('.pubg-content ul li:nth-child(1)').textContent = translations.pubg_task1;
-        document.querySelector('.pubg-content ul li:nth-child(2)').textContent = translations.pubg_task2;
-        document.querySelector('.overwatch-content ul li:nth-child(1)').textContent = translations.overwatch_task1;
-        document.querySelector('.overwatch-content ul li:nth-child(2)').textContent = translations.overwatch_task2;
-        document.querySelector('.buttons .button:nth-child(1)').textContent = translations.twitch;
-        document.querySelector('.buttons .button:nth-child(2)').textContent = translations.discord;
-        document.querySelectorAll('.back-button').forEach(button => button.textContent = translations.back);
+
+        // Зміна контенту для PUBG
+        const pubgContent = document.querySelector('.pubg-content .challenge-overlay');
+        pubgContent.innerHTML = `
+            <label for="toggle-home" class="back-button">${translations.back}</label>
+            <h2>${translations.pubg_challenges}</h2>
+            <ul>
+                <li>${translations.pubg_task1}</li>
+                <li>${translations.pubg_task2}</li>
+            </ul>
+            <div class="buttons">
+                <a href="https://www.twitch.tv/" class="button">${translations.twitch}</a>
+                <a href="https://discord.com/" class="button">${translations.discord}</a>
+            </div>
+            <div class="language-buttons">
+                <button class="lang-button" data-lang="ua">Українська</button>
+                <button class="lang-button" data-lang="en">English</button>
+            </div>
+        `;
+
+        // Зміна контенту для Overwatch 2
+        const overwatchContent = document.querySelector('.overwatch-content .challenge-overlay');
+        overwatchContent.innerHTML = `
+            <label for="toggle-home" class="back-button">${translations.back}</label>
+            <h2>${translations.overwatch_challenges}</h2>
+            <ul>
+                <li>${translations.overwatch_task1}</li>
+                <li>${translations.overwatch_task2}</li>
+            </ul>
+            <div class="buttons">
+                <a href="https://www.twitch.tv/" class="button">${translations.twitch}</a>
+                <a href="https://discord.com/" class="button">${translations.discord}</a>
+            </div>
+            <div class="language-buttons">
+                <button class="lang-button" data-lang="ua">Українська</button>
+                <button class="lang-button" data-lang="en">English</button>
+            </div>
+        `;
+
+        // Додаємо обробники для кнопок зміни мови
+        document.querySelectorAll('.lang-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const selectedLang = this.getAttribute('data-lang');
+                localStorage.setItem('language', selectedLang);
+                applyTranslations(data[selectedLang]);
+            });
+        });
     }
 });
