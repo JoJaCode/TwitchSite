@@ -76,13 +76,27 @@ body {
 }
 
 .challenge-overlay {
-    position: relative;
-    z-index: 5;
-    padding: 20px;
+    position: absolute;
     background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
     border-radius: 5px;
     max-width: 600px;
     margin: 0 auto;
+    color: #ffffff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Стиль для блоку челенджів PUBG, який з'являється праворуч */
+.pubg-content .challenge-overlay {
+    right: 10%;
+    left: auto;
+}
+
+/* Стиль для блоку челенджів Overwatch 2, який з'являється ліворуч */
+.overwatch-content .challenge-overlay {
+    left: 10%;
+    right: auto;
 }
 
 .pubg-text, .pubg-content h2 {
