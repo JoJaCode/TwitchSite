@@ -76,36 +76,32 @@ body {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 5px;
-    width: 40%; /* Залишаємо ширину блоку такою ж */
+    width: 45%; /* Трохи збільшимо ширину блоку */
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     color: #ffffff;
-    font-size: 0.7em; /* Зменшено розмір шрифту */
+    font-size: 0.85em; /* Збільшимо розмір шрифту, щоб зробити текст більш читабельним */
 }
 
 .challenge-overlay ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-size: 0.65em; /* Ще більше зменшено розмір шрифту для списку */
+    font-size: 0.85em; /* Зробимо розмір шрифту списку трохи більшим */
 }
 
 .challenge-overlay h2 {
-    font-size: 1.2em; /* Трохи зменшено розмір заголовку */
+    font-size: 1.4em; /* Трохи збільшимо заголовок */
     margin-bottom: 10px;
+    text-align: center;
 }
 
-/* Стиль для блоку челенджів PUBG, який з'являється праворуч */
 .pubg-content .challenge-overlay {
-    right: 10%;
-    left: auto;
+    left: 10%; /* Вирівнювання блоку для PUBG */
 }
 
-/* Стиль для блоку челенджів Overwatch 2, який з'являється ліворуч */
 .overwatch-content .challenge-overlay {
-    left: 10%;
-    right: auto;
+    right: 10%; /* Вирівнювання блоку для Overwatch */
 }
 
 .pubg-text, .pubg-content h2 {
