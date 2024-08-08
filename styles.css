@@ -77,12 +77,12 @@ body {
 
 .challenge-overlay {
     position: relative;
-    background: rgba(0, 0, 0, 0.7);
+    z-index: 5;
     padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 5px;
     max-width: 600px;
     margin: 0 auto;
-    color: #ffffff;
 }
 
 .pubg-text, .pubg-content h2 {
