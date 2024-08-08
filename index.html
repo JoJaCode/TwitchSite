@@ -5,24 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Selection</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Підключення шрифтів -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/pubg-sans">
+    <style>
+        @font-face {
+            font-family: 'Bank Gothic';
+            src: url('https://upload.wikimedia.org/wikipedia/commons/2/24/Bank_Gothic.ttf');
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <input type="radio" id="toggle-pubg" name="toggle" hidden>
         <input type="radio" id="toggle-overwatch" name="toggle" hidden>
+        <input type="radio" id="toggle-home" name="toggle" hidden checked>
 
         <div class="half pubg">
             <label for="toggle-pubg">
                 <img src="pubg.jpg" alt="PUBG">
-                <div class="text-overlay">PUBG</div>
+                <div class="text-overlay pubg-text">PUBG</div>
             </label>
         </div>
 
         <div class="half overwatch">
             <label for="toggle-overwatch">
                 <img src="overwatch.jpg" alt="Overwatch 2">
-                <div class="text-overlay">Overwatch 2</div>
+                <div class="text-overlay overwatch-text">Overwatch 2</div>
             </label>
+        </div>
+
+        <!-- Контент для PUBG -->
+        <div class="content-container pubg-content">
+            <label for="toggle-home" class="back-button">← Повернутися</label>
+            <h2>Челенджі для PUBG</h2>
+            <ul>
+                <li>Виграйте матч без використання зброї.</li>
+                <li>Вижийте 30 хвилин на мапі Sanhok.</li>
+            </ul>
+            <div class="buttons">
+                <a href="https://www.twitch.tv/" class="button">Twitch</a>
+                <a href="https://discord.com/" class="button">Discord</a>
+            </div>
+        </div>
+
+        <!-- Контент для Overwatch 2 -->
+        <div class="content-container overwatch-content">
+            <label for="toggle-home" class="back-button">← Повернутися</label>
+            <h2>Челенджі для Overwatch 2</h2>
+            <ul>
+                <li>Переможете 10 ворогів за героя Reinhardt.</li>
+                <li>Зробіть 5 ультімейтів у одній грі.</li>
+            </ul>
+            <div class="buttons">
+                <a href="https://www.twitch.tv/" class="button">Twitch</a>
+                <a href="https://discord.com/" class="button">Discord</a>
+            </div>
         </div>
     </div>
 </body>
