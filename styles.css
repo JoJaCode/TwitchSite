@@ -48,6 +48,39 @@ body {
     text-align: center;
 }
 
+.language-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.lang-button {
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+    z-index: 10;
+}
+
+.lang-button:hover {
+    background-color: #2980b9;
+}
+
+.challenge-overlay {
+    position: relative;
+    z-index: 5;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .challenge-overlay ul {
     font-size: 1em;
 }
@@ -166,27 +199,6 @@ ul li {
     color: white;
     cursor: pointer;
     text-decoration: none;
-}
-
-.language-buttons {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.lang-button {
-    padding: 8px 16px;
-    margin: 5px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 1em;
-}
-
-.lang-button:hover {
-    background-color: #2980b9;
 }
 
 
