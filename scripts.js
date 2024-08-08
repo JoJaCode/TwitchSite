@@ -11,14 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
             translationsData = data;
             applyTranslations(data[lang]);
 
-            // Додаємо обробники для кнопок зміни мови після того, як дані завантажено
-            document.querySelectorAll('.lang-button').forEach(button => {
-                button.addEventListener('click', function() {
-                    const selectedLang = this.getAttribute('data-lang');
-                    localStorage.setItem('language', selectedLang);
-                    applyTranslations(translationsData[selectedLang]);
-                });
-            });
+            // Ініціалізація обробників після завантаження даних
+            initLanguageButtons();
         });
 
     function applyTranslations(translations) {
@@ -63,5 +57,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 <button class="lang-button" data-lang="en"><img src="uk.png" alt="UK" class="flag-icon"></button>
             </div>
         `;
+
+        // Після оновлення контенту ініціалізуємо обробники знову
+        initLanguageButtons();
+    }
+
+    function initLanguageButtons() {
+        document.querySelectorAll('.lang-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const selectedLang = this.getAttribute('data-lang');
+                localStorage.setItem('language', selectedLang);
+                applyTranslations(translationsData[selectedLang]);
+            });
+        });
     }
 });
