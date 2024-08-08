@@ -18,19 +18,27 @@ body {
 }
 
 .half {
-    width: 50%;
+    width: 960px;
     height: 100%;
     position: absolute;
     top: 0;
-    transition: width 0.5s, height 0.5s, left 0.5s;
+    transition: all 0.5s ease;
     overflow: hidden;
+}
+
+.half.pubg {
+    left: 0;
+}
+
+.half.overwatch {
+    right: 0;
 }
 
 .half img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, width 0.5s ease;
 }
 
 .half:hover img {
@@ -56,32 +64,32 @@ body {
 
 /* Якщо вибраний PUBG */
 input[type="radio"]:checked#toggle-pubg ~ .pubg {
-    width: 100%;
-    height: 99%;
+    width: 1920px;
+    height: 100%;
     left: 0;
     z-index: 2;
 }
 
 input[type="radio"]:checked#toggle-pubg ~ .overwatch {
     width: 0;
-    height: 99%;
-    left: 100%;
+    height: 100%;
+    right: 0;
     z-index: 1;
     opacity: 0;
     pointer-events: none;
 }
 
 input[type="radio"]:checked#toggle-overwatch ~ .overwatch {
-    width: 100%;
-    height: 99%;
-    left: 0;
+    width: 1920px;
+    height: 100%;
+    right: 0;
     z-index: 2;
 }
 
 input[type="radio"]:checked#toggle-overwatch ~ .pubg {
     width: 0;
-    height: 99%;
-    left: 100%;
+    height: 100%;
+    left: 0;
     z-index: 1;
     opacity: 0;
     pointer-events: none;
@@ -107,10 +115,9 @@ input[type="radio"]:checked#toggle-home ~ .overwatch {
     display: block;
     opacity: 1;
     pointer-events: auto;
-    width: 50%;
+    width: 960px;
     height: 100%;
     z-index: 1;
-    left: auto;
 }
 
 input[type="radio"]:checked#toggle-home ~ .full {
