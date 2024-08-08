@@ -48,6 +48,10 @@ body {
     text-align: center;
 }
 
+.challenge-overlay ul {
+    font-size: 1em;
+}
+
 .pubg-text, .pubg-content h2 {
     font-family: 'PUBG Sans', sans-serif;
 }
@@ -163,6 +167,27 @@ ul li {
     cursor: pointer;
     text-decoration: none;
 }
+
+.language-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.lang-button {
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.lang-button:hover {
+    background-color: #2980b9;
+}
+
 
 /* Анімація для появи тексту */
 @keyframes fadeIn {
