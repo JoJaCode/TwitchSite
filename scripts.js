@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 <a href="https://discord.com/" class="button">${translations.discord}</a>
             </div>
             <div class="language-buttons">
-                <button class="lang-button" data-lang="ua">🇺🇦</button>
-                <button class="lang-button" data-lang="en">🇬🇧</button>
+                <button class="lang-button" data-lang="ua"><img src="ua.png" alt="UA" class="flag-icon"></button>
+                <button class="lang-button" data-lang="en"><img src="uk.png" alt="UK" class="flag-icon"></button>
             </div>
         `;
 
@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 <a href="https://discord.com/" class="button">${translations.discord}</a>
             </div>
             <div class="language-buttons">
-                <button class="lang-button" data-lang="ua">🇺🇦</button>
-                <button class="lang-button" data-lang="en">🇬🇧</button>
+                <button class="lang-button" data-lang="ua"><img src="ua.png" alt="UA" class="flag-icon"></button>
+                <button class="lang-button" data-lang="en"><img src="uk.png" alt="UK" class="flag-icon"></button>
             </div>
         `;
     }
