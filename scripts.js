@@ -10,10 +10,17 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             translationsData = data;
             applyTranslations(data[lang]);
-
-            // Ініціалізація обробників після завантаження даних
-            initLanguageButtons();
         });
+
+    // Використовуємо делегування подій для кнопок мови
+    document.body.addEventListener('click', function(event) {
+        if (event.target.classList.contains('lang-button') || event.target.parentElement.classList.contains('lang-button')) {
+            const button = event.target.closest('.lang-button');
+            const selectedLang = button.getAttribute('data-lang');
+            localStorage.setItem('language', selectedLang);
+            applyTranslations(translationsData[selectedLang]);
+        }
+    });
 
     function applyTranslations(translations) {
         // Зміна назв ігор
@@ -57,18 +64,5 @@ document.addEventListener("DOMContentLoaded", function() {
                 <button class="lang-button" data-lang="en"><img src="uk.png" alt="UK" class="flag-icon"></button>
             </div>
         `;
-
-        // Після оновлення контенту ініціалізуємо обробники знову
-        initLanguageButtons();
-    }
-
-    function initLanguageButtons() {
-        document.querySelectorAll('.lang-button').forEach(button => {
-            button.addEventListener('click', function() {
-                const selectedLang = this.getAttribute('data-lang');
-                localStorage.setItem('language', selectedLang);
-                applyTranslations(translationsData[selectedLang]);
-            });
-        });
     }
 });
