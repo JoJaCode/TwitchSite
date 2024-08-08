@@ -4,27 +4,33 @@
         "overwatch": "Overwatch 2",
         "pubg_challenges": "Челенджі для PUBG",
         "overwatch_challenges": "Челенджі для Overwatch 2",
-        "pubg_task1": "Виграйте матч без використання зброї.",
-        "pubg_task2": "Вижийте 30 хвилин на мапі Sanhok.",
-        "overwatch_task1": "Переможете 10 ворогів за героя Reinhardt.",
-        "overwatch_task2": "Зробіть 5 ультімейтів у одній грі.",
+        "pubg_tasks": {
+            "pubg_task1": "Виграйте матч без використання зброї.",
+            "pubg_task2": "Вижийте 30 хвилин на мапі Sanhok."
+        },
+        "overwatch_tasks": {
+            "overwatch_task1": "Переможете 10 ворогів за героя Reinhardt.",
+            "overwatch_task2": "Зробіть 5 ультімейтів у одній грі."
+        },
         "twitch": "Twitch",
         "discord": "Discord",
-        "back": "← Повернутися",
-        "language_select": "Виберіть мову"
+        "back": "← Повернутися"
     },
     "en": {
         "pubg": "PUBG",
         "overwatch": "Overwatch 2",
         "pubg_challenges": "Challenges for PUBG",
         "overwatch_challenges": "Challenges for Overwatch 2",
-        "pubg_task1": "Win a match without using weapons.",
-        "pubg_task2": "Survive 30 minutes on Sanhok map.",
-        "overwatch_task1": "Defeat 10 enemies as Reinhardt.",
-        "overwatch_task2": "Use 5 ultimates in one game.",
+        "pubg_tasks": {
+            "pubg_task1": "Win a match without using weapons.",
+            "pubg_task2": "Survive 30 minutes on Sanhok map."
+        },
+        "overwatch_tasks": {
+            "overwatch_task1": "Defeat 10 enemies as Reinhardt.",
+            "overwatch_task2": "Use 5 ultimates in one game."
+        },
         "twitch": "Twitch",
         "discord": "Discord",
-        "back": "← Back",
-        "language_select": "Select Language"
+        "back": "← Back"
     }
 }
