@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function() {
             <h2>${translations.pubg_challenges}</h2>
             <ul>${pubgTasksHtml}</ul>
             <div class="buttons">
-                <a href="https://www.twitch.tv/" class="button">${translations.twitch}</a>
-                <a href="https://discord.com/" class="button">${translations.discord}</a>
+                <a href="https://www.twitch.tv/JoJaCode" class="button">${translations.twitch}</a>
+                <a href="https://discord.gg/PDqWtdfUTx" class="button">${translations.discord}</a>
             </div>
             <div class="language-buttons">
                 <button class="lang-button" data-lang="ua"><img src="ua.png" alt="UA" class="flag-icon"></button>
@@ -63,8 +63,8 @@ document.addEventListener("DOMContentLoaded", function() {
             <h2>${translations.overwatch_challenges}</h2>
             <ul>${overwatchTasksHtml}</ul>
             <div class="buttons">
-                <a href="https://www.twitch.tv/" class="button">${translations.twitch}</a>
-                <a href="https://discord.com/" class="button">${translations.discord}</a>
+                <a href="https://www.twitch.tv/JoJaCode" class="button">${translations.twitch}</a>
+                <a href="https://discord.gg/PDqWtdfUTx" class="button">${translations.discord}</a>
             </div>
             <div class="language-buttons">
                 <button class="lang-button" data-lang="ua"><img src="ua.png" alt="UA" class="flag-icon"></button>
