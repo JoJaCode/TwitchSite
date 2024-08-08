@@ -76,32 +76,32 @@ body {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 5px;
-    width: 45%; /* Трохи збільшимо ширину блоку */
+    width: 45%;
     top: 50%;
     transform: translateY(-50%);
     color: #ffffff;
-    font-size: 1em; /* Збільшимо розмір шрифту, щоб зробити текст більш читабельним */
+    font-size: 1em;
 }
 
 .challenge-overlay ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-size: 0.95em; /* Зробимо розмір шрифту списку трохи більшим */
+    font-size: 0.95em;
 }
 
 .challenge-overlay h2 {
-    font-size: 1.4em; /* Трохи збільшимо заголовок */
+    font-size: 1.4em;
     margin-bottom: 10px;
     text-align: center;
 }
 
 .pubg-content .challenge-overlay {
-    right: 10%; /* Вирівнювання блоку для PUBG */
+    left: 10%;
 }
 
 .overwatch-content .challenge-overlay {
-    left: 10%; /* Вирівнювання блоку для Overwatch */
+    right: 10%;
 }
 
 .pubg-text, .pubg-content h2 {
@@ -213,12 +213,20 @@ ul li {
 }
 
 .back-button {
-    display: block;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
+    display: inline-block;
+    background-color: #007bff; /* Колір фону кнопки */
+    color: white; /* Колір тексту */
+    padding: 10px 20px; /* Відступи для створення форми кнопки */
+    border-radius: 5px; /* Закруглення кутів */
+    text-decoration: none; /* Прибираємо підкреслення */
+    font-size: 1em;
+    margin-bottom: 20px; /* Відступ від заголовка */
+    cursor: pointer; /* Курсор у вигляді руки */
+    transition: background-color 0.3s ease; /* Плавний перехід кольору */
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Колір фону при наведенні */
 }
 
 
