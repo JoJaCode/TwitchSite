@@ -76,23 +76,23 @@ body {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 5px;
-    width: 40%; /* Збільшено ширину блоку */
+    width: 40%; /* Залишаємо ширину блоку такою ж */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-    font-size: 1em; /* Зменшено розмір шрифту */
+    font-size: 0.7em; /* Зменшено розмір шрифту */
 }
 
 .challenge-overlay ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-size: 0.8em; /* Додаткове зменшення розміру шрифту для списку */
+    font-size: 0.65em; /* Ще більше зменшено розмір шрифту для списку */
 }
 
 .challenge-overlay h2 {
-    font-size: 1.5em;
+    font-size: 1.2em; /* Трохи зменшено розмір заголовку */
     margin-bottom: 10px;
 }
 
